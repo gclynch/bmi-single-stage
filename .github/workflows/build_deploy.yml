@@ -1,7 +1,7 @@
 # build
 # deploy to Azure as App service
 
-name: Build Deploy BMI
+name: Build Test Deploy BMI
 
 env:
   AZURE_WEBAPP_NAME: gc-bmicalculator-ga            # set this to your application's name
