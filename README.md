@@ -1,1 +1,1 @@
-![example workflow](https://github.com/gclynch/bmi2021/actions/workflows/bmi_ci.yml/badge.svg)
+![example workflow](https://github.com/gclynch/bmi-single-stage/actions/workflows/build_deploy.yml/badge.svg)
