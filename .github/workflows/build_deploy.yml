@@ -16,7 +16,7 @@ on:
   #  branches: [ master ]
 
 jobs:
-  build_deploy:
+  build_test_deploy:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
@@ -25,7 +25,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Run unit tests
-      run: dotnet test BMICalculator.UnitTests/BMICalculator.UnitTests.csproj --no-restore --collect "Code coverage" 
+      run: dotnet test bmiUnitTestProject/bmiUnitTestProject.csproj --no-restore --collect "Code coverage" 
 
     - name: Publish web app
       run: dotnet publish -c Release -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp
