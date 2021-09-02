@@ -97,8 +97,7 @@ namespace SeleniumTest
                 // item comes back like "BMIValue: 24.96"
                 String bmi = BMIValueElement.Text.ToString();
 
-                // 10 Celsius = 50 Fahrenheit, assert it
-                StringAssert.Contains(bmi, "24.96");
+                StringAssert.EndsWith(bmi, "24.96");
 
                 driver.Quit();
             }
